@@ -1,43 +1,51 @@
-# cortex-ai
+# CORTEX AI - Plataforma de Inteligência Governamental
 
-This template should help get you started developing with Vue 3 in Vite.
+**Cortex AI** é uma plataforma *GovTech* de última geração desenhada para automatizar e agilizar a análise de processos administrativos de Recursos Humanos no setor público.
 
-## Recommended IDE Setup
+A aplicação utiliza Inteligência Artificial Generativa (Gemini 1.5 Flash) para realizar o Processamento Inteligente de Documentos (IDP), validação de regras estatutárias (RAR) e auxílio à tomada de decisão, com foco específico no Estatuto dos Servidores Públicos (atualmente configurado para o Estado do Pará, Brasil).
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-## Recommended Browser Setup
+## 🚀 Funcionalidades Principais
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+* **Orquestração de Agentes IA:** Fluxo automatizado que passa por:
+    1.  **IDP (Extração):** Leitura de documentos e extração de campos chave (ex: Nome, Matrícula, Tipo de Documento).
+    2.  **Enriquecimento:** Cruzamento automático com base de dados de servidores.
+    3.  **Raciocínio (Reasoning):** Aplicação de regras legais (ex: verificar se o tempo de serviço permite a licença prêmio).
+* **Validação Humana (Human-in-the-loop):** Interface para os analistas reverem e corrigirem os dados extraídos pela IA antes da conclusão.
+* **Gestão de Regras Dinâmicas:** Módulo para criar e editar regras de negócio (JSON) sem necessidade de alterar o código fonte.
+* **Assistente Jurídico:** Chatbot integrado com conhecimento da legislação (Lei 5.810/94 e PCCR) para tirar dúvidas rápidas.
+* **Dashboard de Performance:** Métricas em tempo real sobre taxas de aprovação, rejeição e volume de processos.
+* **Upload Inteligente:** Suporte para arrastar e largar ficheiros ou utilização de *templates* para testes rápidos.
 
-## Customize configuration
+## 🛠️ Stack Tecnológica
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### Frontend
+* **Framework:** Vue 3 (Composition API)
+* **Build Tool:** Vite
+* **Estilos:** Tailwind CSS
+* **Gestão de Estado:** Pinia
+* **Ícones:** Lucide Vue Next
+* **Visualização PDF:** Vue PDF Embed
 
-## Project Setup
+### Backend (Serverless)
+* **Core:** Firebase (Authentication, Firestore, Hosting)
+* **Compute:** Firebase Cloud Functions (Node.js 22)
+* **AI Model:** Google Generative AI (Gemini 1.5 Flash)
 
-```sh
-npm install
-```
+## ⚙️ Pré-requisitos
 
-### Compile and Hot-Reload for Development
+Antes de começar, certifique-se de que tem instalado:
+* [Node.js](https://nodejs.org/) (Versão 20 ou superior recomendada)
+* [Firebase CLI](https://firebase.google.com/docs/cli) (`npm install -g firebase-tools`)
 
-```sh
-npm run dev
-```
+## 📦 Instalação e Configuração
 
-### Compile and Minify for Production
+### 1. Clonar o Repositório
 
-```sh
-npm run build
-```
-# CortexAI
-# Cortex-IA
-# Cortex-IA
-# Cortex-IA
-# Cortex-IA
+```bash
+git clone [https://github.com/seu-usuario/cortex-ai.git](https://github.com/seu-usuario/cortex-ai.git)
+cd cortex-ai
