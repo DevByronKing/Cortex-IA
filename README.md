@@ -53,8 +53,8 @@
 
 ```bash
 # 1. Clonar o repositório
-git clone https://github.com/sitecseduc-cell/CortexAI.git
-cd CortexAI
+git clone https://github.com/DevByronKing/Cortex-IA.git
+cd Cortex-IA
 
 # 2. Instalar as dependências
 npm install
